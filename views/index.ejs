@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, IT'S ASADEXPRESS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo-link" href="/">Shef_Povar</a>
+          
+                <form action="/search" class="" method="GET">
+                    <input type="text" class="search" name="query" placeholder="Search...">
+                    <button class="search-btn" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main style="margin-top: 50px;">
+        <div class="container">
+            <div style="display: flex">
+            
+                <div class="left_bar">
+                    
+                    <ul class="left-bar-ul">
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none" href="/">Все</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="text-white text-decoration-none" href="/products?type=salad">Салаты</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href='/products?type=cake' class="text-white text-decoration-none">Торты и пироги</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href='/products?type=meat' class="text-white text-decoration-none">Блюда из рыбы / из мяса</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href='/products?type=snack' class="text-white text-decoration-none">Закуски</a>
+                          </li>
+                          
+                          <li class="nav-item dropdown">
+                            <a class="text-white text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Другие Блюда
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a href='/products?type=blin' class="dropdown-item">Блины</a>
+                                <a href='/products?type=pizza' class="dropdown-item">Пицца</a>
+                                <a href='/products?type=sushi' class="dropdown-item">Суши и роллы</a>
+                                <a href='/products?type=burger' class="dropdown-item">Бургеры</a>
+    
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a href="#" class="text-white text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Блюда из стран
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a href="/products?type=uzbek" class="dropdown-item">Узбекская кухня</a>
+                                <a href="/products?type=russian" class="dropdown-item">Российская кухня</a>
+                                <a href="/products?type=italian" class="dropdown-item">Итальянская кухня</a>
+                                <a href="/products?type=spain" class="dropdown-item">Испанская кухня</a>
+                                <a href="/products?type=mexico" class="dropdown-item">Мексиканская   кухня</a>
+                                <a href="/products?type=turk" class="dropdown-item">Турецская кухня</a>
+                                <a href="/products?type=japan" class="dropdown-item">Японская кухня</a>
+                                <a href="/products?type=american" class="dropdown-item">Американская кухня</a>
+    
+    
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+                <div class="products">  
+                        <div class="elements">
+                            <% products.forEach((el, i)=>{ %>
+                                <div class="element">
+                                    <img src="<%= el.image %>" alt="img" width="100%" height="200px">
+                                    <a class="element-name text-center d-block mt-3" href="/one/<%= el.id %>"><%= el.name %></a>
+                                  
+                                </div>
+                            <% })%>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

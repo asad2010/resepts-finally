@@ -1,0 +1,136 @@
+* {padding: 0; margin: 0;box-sizing: border-box;} body, html {margin: 0;padding: 0; background: linear-gradient(to right bottom, black, #333, #444, gray); background-repeat: no-repeat; min-height: 100vh;}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.logo-link {
+    text-decoration: none;
+    font-size: 25px;
+    background: linear-gradient(to right, orange 70%, white 30%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right {
+    display: flex;
+    width: 150px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-li {
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-link:hover {
+    color: rgba(255, 68, 0, 0.274);
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+}
+.products {
+
+}
+.element {
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+  
+}
+.element-name {
+    color: whitesmoke;
+    
+}
+.element-type , .element-price {
+    margin-top: 10px;
+    color: rgb(3, 3, 3)
+}
+
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+.left_bar {
+}
+.left-bar-ul {
+    list-style: none;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-li {
+    width: 100%;    
+    height: 40px;
+    border-radius: 1rem;
+    text-align: start;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.left-li:hover {
+    background: gray;
+}
+.left-link {
+    text-decoration: none;
+    color: white;
+   display: block;
+   width: 100%;
+}
+header {
+    padding-top: 40px;
+}
+
+.search {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 400px;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 40px;
+}
+form {
+    display: flex;  
+}
+.formm {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    flex-direction: column;
+}
+.formm input {
+    height: 40px;
+    padding-left: 20px;
+}
+.formm button {
+    height: 40px;
+    width: 150px;
+    margin: 20px auto;
+}
+.search-btn {
+    height: 40px;
+    width: 150px;
+    border:none;
+    cursor: pointer;
+    border-left: 1px solid gray;    
+}
